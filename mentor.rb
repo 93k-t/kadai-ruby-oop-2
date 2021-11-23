@@ -11,11 +11,7 @@ class Mentor
 end
 
 class RailsMentor < Mentor  # RailsMentor に Mentor を継承
-
-    def initialize(name)
-        super("赤出")
-    end
-    
+# 親クラスで initializeメソッドが定義されているので子クラスでオーバーライドさせる必要はない
     def job  # jobメソッドをオーバーライド(上書き) 
         puts "#{self.name}です。私はRubyとRailsでWebアプリケーションを作ります。"
     end
